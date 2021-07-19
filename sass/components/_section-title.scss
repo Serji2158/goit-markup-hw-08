@@ -1,0 +1,29 @@
+.section__title {
+  font-family: $Prime-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+// .section__title {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--title-color);
+// }
+
+// .section__title--hidden {
+//   display: none;
+// }

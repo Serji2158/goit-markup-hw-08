@@ -1,0 +1,206 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  margin-left: 70px;
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-family: $Prime-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+
+/* ---- Socials Block из Команда------------   */
+
+.social-links {
+  @extend %flex-center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  &__block--position {
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.social-links__link {
+  cursor: pointer;
+@extend %flex-center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &--white {
+    background-color: var(--text-color-white);
+  }
+
+  &--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-position: center;
+  }
+
+  &:hover {
+    background-color: var(--WEB-BG-color);
+    transition: var(--WEB-BG-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .social-links__icon {
+    fill: var(--text-color-white);
+  }
+}
+
+.social-links__icon {
+  cursor: pointer;
+@extend %flex-center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  &--dark {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--white {
+    fill: var(--text-color-white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    fill: white;
+  }
+}
+
+.social-links__list {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--WEB-BG-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+// .socials {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   margin-top: 72px;
+//   margin-bottom: 100px;
+//   margin-left: 70px;
+// }
+
+// .socials__title {
+//   margin-bottom: 20px;
+
+//   font-family: Roboto;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+
+//   color: #ffffff;
+// }
+
+// /* ---- Socials Block из Команда------------   */
+
+// .social-links {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .social-links__block--position {
+//   margin-top: 16px;
+//   margin-bottom: 30px;
+// }
+
+// .social-links__list {
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+// }
+
+// .social-links__list:hover,
+// .social-links__list:focus {
+//   background-color: var(--WEB-BG-color);
+// }
+
+// .social-links__link {
+//   cursor: pointer;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+// }
+
+// .social-links__link--white {
+//   background-color: var(--text-color-white);
+// }
+
+// .social-links__link--dark {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   background-position: center;
+// }
+
+// .social-links__link:hover {
+//   background-color: var(--WEB-BG-color);
+//   transition: var(--WEB-BG-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .social-links__link:hover .social-links__icon {
+//   fill: var(--text-color-white);
+// }
+
+// .social-links__list + .social-links__list {
+//   margin-left: 10px;
+// }
+
+// .social-links__icon {
+//   cursor: pointer;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .social-links__icon--dark {
+//   fill: #afb1b8;
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .social-links__icon--white {
+//   fill: var(--text-color-white);
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .social-links__icon:hover,
+// .social-links__icon:focus {
+//   fill: white;
+// }
