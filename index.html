@@ -14,8 +14,8 @@
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
     <body>  
-        <!--Хедер--> 
-        <!-- <header class="header">
+        <!-- Хедер--> 
+        <header class="header">
             <div class="container header-container">
                 <nav class="navigation">
                     <a class="logo" href=""><span class="logo__web">Web</span><span class="logo__studio--dark">Studio</span></a>
@@ -30,18 +30,18 @@
                     <li class="contacts-list__phone"><a href="tel:+380961111111" class="contacts-list__link"><svg class="contacts-list__icon" width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>                    
                 </ul>                
             </div>
-        </header> -->
-        <!--Основная часть-->
+        </header>
+        <!--Основная часть -->
         <main>
         <!--Банер-Герой-->
-            <!-- <section class="sectiom-hero">
+            <section class="sectiom-hero">
                 <div class="container container-hero">
                     <h1 class="sectiom-hero__title">Эффективные решения для вашего бизнеса</h1>
                         <button type="button" data-modal-open class="hero-button">Заказать услугу</button>
                 </div>
-                </section> -->
+                </section>
         <!-----Блок Наши особенности------------->
-            <!-- <section class="section-features section">
+            <section class="section-features section">
                 <div class="container">
                     <h2 class="section__title--hidden">Наши особенности</h2>
                         <ul class="features-list">
@@ -83,9 +83,9 @@
                             </li>
                         </ul>
                 </div>
-            </section> -->
+            </section>
         <!-- Блок Чем мы занимаемся-->
-            <!-- <section class="section-services section">
+            <section class="section-services section">
                 <div class="container">
                     <h2 class="section__title">Чем мы занимаемся</h2>
                         <ul class="services-list">
@@ -99,15 +99,20 @@
                             <p class="services-list_name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                             </li>
                         </ul>
-                </div> -->
+                </div>
             </section>
         <!-- Блок Наша команда-->
-            <!-- <section class="section-team section">
+            <section class="section-team section">
                 <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                     <ul class="crew">
                         <li class="crew__card">
-                            <img src="./images/mainpage/team1.jpg" alt="Игорь Демьяненко Продакт Дизайнер" width="270" height="260"/>
+                            <picture>
+                                <source srcset="./images/desktop/product-designer2x-min.jpg, ./images/desktop/product-designer-min.jpg" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img@2x-min.jpg, ./images/tablet/img-min.jpg" media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img@2xt1-min.jpg, ./images/mobile/imgt4-min.jpg" media="(min-width: 480px)">
+                                <img src="./images/mainpage/team1.jpg" alt="Игорь Демьяненко Продакт Дизайнер"/>
+                            </picture>
                             <div class="crewmembers">
                                 <h3 class="crewmembers__name">Игорь Демьяненко</h3>
                                 <p class="crewmembers__positon">Product Designer</p>
@@ -147,7 +152,13 @@
                             </div>
                         </li>
                         <li class="crew__card">
-                            <img src="./images/mainpage/team2.jpg" alt="Ольга Репина Фронтенд Разработчик" width="270" height="260"/>
+                            <picture>
+                                <source srcset="../images/desktop/frontend-developer2x-min.jpg, ../images/desktop/frontend-developer-min.jpg"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img@2xq-min.jpg, ./images/tablet/imgq-min.jpg" media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img@2xt2-min.jpg, ./images/mobile/imgt2-min.jpg" media="(min-width: 480px)">
+                                <img src="./images/mainpage/team2.jpg" alt="Ольга Репина Фронтенд Разработчик"/>
+                            </picture>
                             <div class="crewmembers">    
                                 <h3 class="crewmembers__name">Ольга Репина</h3>
                                 <p class="crewmembers__positon">Frontend Developer</p>
@@ -185,9 +196,15 @@
                                     </li>
                                 </ul>
                             </div> 
-                            </li>
+                        </li>
                         <li class="crew__card">
-                            <img src="./images/mainpage/team3.jpg" alt="Николай Тарасов Маркетинг" width="270" height="260"/>
+                            <picture>
+                                <source srcset="./images/desktop/marketing2x-min.jpg, ./images/desktop/marketing-min.jpg"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img@2x3man-min.jpg, ./images/tablet/img3man-min.jpg" media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img@2xt3-min.jpg, ./images/mobile/imgt3-min.jpg" media="(min-width: 480px)">
+                                <img src="./images/mainpage/team3.jpg" alt="Николай Тарасов Маркетинг"/>
+                            </picture>    
                             <div class="crewmembers">
                                 <h3 class="crewmembers__name">Николай Тарасов</h3>
                                 <p class="crewmembers__positon">Marketing</p>
@@ -227,7 +244,13 @@
                             </div>
                         </li>
                         <li class="crew__card">
-                            <img src="./images/mainpage/team4.jpg" alt="Михаил Ермаков Юай Дизайнер" width="270" height="260"/>
+                            <picture>
+                                <source srcset="./images/desktop/ui-designer2x-min.jpg, ./images/desktop/ui-designer-min.jpg"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img@2x4man-min.jpg, ./images/tablet/img4man-min.jpg" media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img@2xt4-min.jpg, ./images/mobile/imgt4-min.jpg" media="(min-width: 480px)">
+                            <img src="./images/mainpage/team4.jpg" alt="Михаил Ермаков Юай Дизайнер" />
+                            </picture>
                             <div class="crewmembers">
                                 <h3 class="crew__name">Михаил Ермаков</h3>
                                 <p class="crewmembers__positon">UI Designer</p>
@@ -268,9 +291,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>   -->
+            </section>  
         <!------Блок Постоянные клиенты------------>   
-            <!-- <section class="section">
+            <section class="section">
                 <div class="container">
                     <h2 class="section__title">Постоянные клиенты</h2>
                     <ul class="clients">
@@ -318,12 +341,12 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!--Футер-->
-        <!-- <footer class="footer">
-            <div class="container container-footer">
-                <div class="footer-contacts">
+        <!---------------------Футер--------------------------------------------->
+        <footer class="footer">
+            <div class="container footer-block">
+                <div class="footer-contacts footer-block__address">
                     <a class="logo" href=""><span class="logo__web">Web</span><span class="logo__studio--light">Studio</span></a>
                     <address class="corp-contacts">
                         <p class="corp-contacts__address"> г. Киев, пр-т Леси Украинки, 26 </p>
@@ -333,7 +356,7 @@
                         </ul>
                     </address>
                 </div>
-                <div class="socials">
+                <div class="socials footer-block__socials">
                     <h2 class="socials__title">Присоединяйтесь</h2>
                     <ul class="social-links">
                         <li class="social-links__list">
@@ -369,7 +392,7 @@
                         </li>
                     </ul>        
                 </div>
-                <div class="subscription">
+                <div class="subscription footer-block__subscription">
                     <h2 class="socials__title">Подпишитесь на рассылку</h2>
                     <ul> 
                         <li class="subscription__form">
@@ -384,7 +407,7 @@
             </div>
         </footer> -->
         <!-------------Backdrop----------------->
-        <!-- <div class="backdrop is-hidden" data-modal> 
+        <div class="backdrop is-hidden" data-modal> 
             <div class="modal">
                 <button class="modal__close-btn" type="button" data-modal-close><span>&#10006;</span></button>
                 <form action="" method="GET" class="modal__form" autocomplete="ony" >
@@ -439,6 +462,6 @@
                     <button class="hero-button" type="submit">Отправить</button>
             </div>
         </div>
-        <script src="./js/modal.js"></script> -->
+        <script src="./js/modal.js"></script>
     </body>
 </html>
