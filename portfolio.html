@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
     <body>  
         <!--Хедер--> 
-        <header class="header">
+        <!-- <header class="header">
             <div class="container header-container">
                 <nav class="navigation">
                     <a class="logo" href=""><span class="logo__web">Web</span><span class="logo__studio--dark">Studio</span></a>
@@ -36,25 +37,25 @@
                             </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
-        </header>
+        </header> -->
         <!--Основная часть-->
         <main>
         <!--Портфолио-->
-            <section>
+            <section class="section">
                 <h1 class="section__title--hidden">Наши работы</h1>
                 <div class="container container-projects">
                     <ul class="filter-menu">
                         <li class="filter-menu__filter"><button type="button" class="filter-menu__button">Все</button></li>
                         <li class="filter-menu__filter"><button type="button" class="filter-menu__button">Приложения</button></li>
                         <li class="filter-menu__filter"><button type="button" class="filter-menu__button">Веб-сайты</button></li>
-                        <li class="filter-menu__filter"><button type="button" class="filter-menu__button">Дизайн</button></li>
-                        <li class="filter-menu__filter"><button type="button" class="filter-menu__button">Маркетинг</button></li>
+                        <li class="filter-menu__filter filter-menu__button-four "><button type="button" class="filter-menu__button">Дизайн</button></li>
+                        <li class="filter-menu__filter filter-menu__button-five"><button type="button" class="filter-menu__button">Маркетинг</button></li>
                     </ul>
                     <ul class="project-catalog">
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/technocryak.jpg" alt="Технокряк" width="370" height="294"/>
+                                    <img src="./images/portfolio/technocryak.jpg" alt="Технокряк" />
                                     <p class="project-catalog__discr">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -67,7 +68,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/poster.jpg" alt="Постер Нью Орлеан вс Голден Стар" width="370" height="294"/>
+                                    <img src="./images/portfolio/poster.jpg" alt="Постер Нью Орлеан вс Голден Стар" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit illo.</p>
                                 </div>
                                 <div class="project-catalog__project-title">
@@ -79,7 +80,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/restaurant.jpg" alt="Ресторан Сифуд" width="370" height="294"/>
+                                    <img src="./images/portfolio/restaurant.jpg" alt="Ресторан Сифуд"/>
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit illo.</p>
                                 </div>
@@ -92,7 +93,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/prime.jpg" alt="Проект Прайм" width="370" height="294"/>
+                                    <img src="./images/portfolio/prime.jpg" alt="Проект Прайм" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -106,7 +107,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/boxes.jpg" alt="Проект Боксиз" width="370" height="294"/>
+                                    <img src="./images/portfolio/boxes.jpg" alt="Проект Боксиз" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -120,7 +121,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/inspiration.jpg" alt="Инспирейшн хэз ноу бордерз" width="370" height="294"/>
+                                    <img src="./images/portfolio/inspiration.jpg" alt="Инспирейшн хэз ноу бордерз" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -134,7 +135,7 @@
                         <li class="project-catalog__item">
                             <div href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/limedition.jpg" alt="Издание Лимитид Эдишн" width="370" height="294"/>
+                                    <img src="./images/portfolio/limedition.jpg" alt="Издание Лимитид Эдишн" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -148,7 +149,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/lab.jpg" alt="Проект ЛАБ" width="370" height="294"/>
+                                    <img src="./images/portfolio/lab.jpg" alt="Проект ЛАБ" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -162,7 +163,7 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/growingbus.jpg" alt="Гроуин Бизнес" width="370" height="294"/>
+                                    <img src="./images/portfolio/growingbus.jpg" alt="Гроуин Бизнес" />
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -178,7 +179,7 @@
             </section>    
         </main>
         <!--Футер-->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container container-footer">
                 <div class="footer-contacts">
                     <a class="logo" href=""><span class="logo__web">Web</span><span
@@ -243,6 +244,6 @@
                     </ul>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>

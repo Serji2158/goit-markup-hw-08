@@ -1,16 +1,18 @@
 .filter-menu {
   display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-
-  &__filter + &__filter {
-    margin-left: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-widh: 768px) {
+    justify-content: center;
+    margin-bottom: 34px;
+    flex-wrap: nowrap;
   }
 }
 
-// .filter-menu__filter + .filter-menu__filter {
-//   margin-left: 8px;
-// }
+.filter-menu__filter {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
 
 .filter-menu__button {
   border: none;
