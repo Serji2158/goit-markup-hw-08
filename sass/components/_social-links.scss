@@ -3,8 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 72px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   margin-left: 70px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 100px;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -36,7 +39,7 @@
 
 .social-links__link {
   cursor: pointer;
-@extend %flex-center;
+  @extend %flex-center;
   // display: flex;
   // align-items: center;
   // justify-content: center;
@@ -66,7 +69,7 @@
 
 .social-links__icon {
   cursor: pointer;
-@extend %flex-center;
+  @extend %flex-center;
   // display: flex;
   // align-items: center;
   // justify-content: center;

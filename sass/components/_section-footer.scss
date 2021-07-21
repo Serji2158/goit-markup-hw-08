@@ -4,20 +4,21 @@
 
 .footer {
   background: #2f303a;
+  padding: 60px 0;
 
-  &-contacts {
-    margin-top: 60px;
-  }
+  // &-contacts {
+  //   margin-top: 60px;
+  // }
 }
 
 .corp-contacts {
-  width: 237px;
   height: auto;
   margin-top: 20px;
-
   font-style: normal;
   line-height: 1.71;
-
+  @media screen and (min-width: 1200px) {
+    width: 237px;
+  }
   &__list--vertical {
     display: flex;
     flex-direction: column;
@@ -43,19 +44,36 @@
   }
 }
 
-// .footer-block {
-//   @media screen and (max-width: 767px) {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-content: center;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//   }
-//   & + & {
-//     margin-bottom: 60px;
-//   }
-// }
+//    Оформляем 480рх   //////////
+
+.container-footer {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-contacts,
+.socials {
+  text-align: center;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 33.33%;
+  }
+}
+
+////////////
 
 // .footer {
 //   background: #2f303a;
