@@ -1,15 +1,24 @@
 .menu-list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  &_item + &_item {
+    margin-left: 50px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    &_item + &_item {
-      margin-left: 50px;
-    }
   }
 }
 
+// &_item + &_item {
+//   margin-left: 50px;
+// display: flex;
+// }
+
 .menu-list__name {
+  
   display: block;
 
   font-weight: 500;

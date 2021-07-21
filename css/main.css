@@ -44,13 +44,6 @@ p {
   justify-content: center;
 }
 
-.logo__web, .logo__studio--dark, .logo__studio--light {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 .section__title {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
@@ -153,6 +146,11 @@ p {
 .logo {
   display: block;
   align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17px;
+  letter-spacing: 0.03em;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo__web {
@@ -167,17 +165,33 @@ p {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .menu-list {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+.menu-list_item + .menu-list_item {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
   .menu-list {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
   }
-  .menu-list_item + .menu-list_item {
-    margin-left: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    margin-left: 93px;
   }
 }
 
@@ -365,11 +379,45 @@ p {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.contacts-list__link {
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contacts-list__icon {
+  margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list__link:hover .contacts-list__icon,
+.contacts-list__link:focus .contacts-list__icon {
+  fill: #2196f3;
+}
+
+.contacts-list__link:hover, .contacts-list__link:focus {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
     align-items: center;
     margin-left: auto;
+    flex-direction: row;
+  }
+  .contacts-list__email + .contacts-list__phone {
+    margin-left: 30px;
   }
   .contacts-list__link {
     display: block;
@@ -377,20 +425,6 @@ p {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-  }
-  .contacts-list__icon {
-    margin-right: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contacts-list__email + .contacts-list__phone {
-    margin-left: 30px;
-  }
-  .contacts-list__link:hover .contacts-list__icon,
-  .contacts-list__link:focus .contacts-list__icon {
-    fill: #2196f3;
-  }
-  .contacts-list__link:hover, .contacts-list__link:focus {
-    color: #2196f3;
   }
 }
 
