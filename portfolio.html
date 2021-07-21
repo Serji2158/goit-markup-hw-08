@@ -15,7 +15,7 @@
 </head>
     <body>  
         <!--Хедер--> 
-        <!-- <header class="header">
+        <header class="header">
             <div class="container header-container">
                 <nav class="navigation">
                     <a class="logo" href=""><span class="logo__web">Web</span><span class="logo__studio--dark">Studio</span></a>
@@ -41,7 +41,7 @@
         <!--Основная часть-->
         <main>
         <!--Портфолио-->
-            <!-- <section class="section">
+            <section class="section">
                 <h1 class="section__title--hidden">Наши работы</h1>
                 <div class="container container-projects">
                     <ul class="filter-menu">
@@ -55,7 +55,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/technocryak.jpg" alt="Технокряк" />
+                                    <picture>
+                                        <source srcset="./images/desktop/tehno2x-min.jpg, ./images/desktop/tehno-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2xp1-min.jpg, ./images/tablet/imgp1-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xpmob-min.jpg, ./images/mobile/imgp1mob-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/technocryak.jpg" alt="Технокряк" />
+                                    </picture>
                                     <p class="project-catalog__discr">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -68,7 +73,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/poster.jpg" alt="Постер Нью Орлеан вс Голден Стар" />
+                                    <picture>
+                                        <source srcset="./images/desktop/orlean2x-min.jpg, ./images/desktop/orlean-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x2p-min.jpg, ./images/tablet/img2p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp2-min.jpg, ./images/mobile/imgp2-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/poster.jpg" alt="Постер Нью Орлеан вс Голден Стар" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit illo.</p>
                                 </div>
                                 <div class="project-catalog__project-title">
@@ -80,7 +90,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/restaurant.jpg" alt="Ресторан Сифуд"/>
+                                    <picture>
+                                        <source srcset="./images/desktop/seafood2x-min.jpg, ./images/desktop/seafood-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x3p-min.jpg, ./images/tablet/img3p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp3-min.jpg, ./images/mobile/imgp3-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/restaurant.jpg" alt="Ресторан Сифуд" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit illo.</p>
                                 </div>
@@ -93,7 +108,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/prime.jpg" alt="Проект Прайм" />
+                                    <picture>
+                                        <source srcset="./images/desktop/prime2x-min.jpg, ./images/desktop/prime-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x4p-min.jpg, ./images/tablet/img4p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp4-min.jpg, ./images/mobile/imgp4-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/prime.jpg" alt="Проект Прайм" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -107,7 +127,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/boxes.jpg" alt="Проект Боксиз" />
+                                    <picture>
+                                        <source srcset="./images/desktop/boxes2x-min.jpg, ./images/desktop/boxes-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x5p-min.jpg, ./images/tablet/img5p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp5-min.jpg, ./images/mobile/imgp5-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/boxes.jpg" alt="Проект Боксиз" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -121,7 +146,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/inspiration.jpg" alt="Инспирейшн хэз ноу бордерз" />
+                                    <picture>
+                                        <source srcset="./images/desktop/inspiration2x-min.jpg, ./images/desktop/inspiration-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x6p-min.jpg, ./images/tablet/img6p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp6-min.jpg, ./images/mobile/imgp6-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/inspiration.jpg" alt="Инспирейшн хэз ноу бордерз" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -135,7 +165,12 @@
                         <li class="project-catalog__item">
                             <div href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/limedition.jpg" alt="Издание Лимитид Эдишн" />
+                                    <picture>
+                                        <source srcset="./images/desktop/limited2x-min.jpg, ./images/desktop/limited-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x7p-min.jpg, ./images/tablet/img7p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp7-min.jpg, ./images/mobile/imgp7-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/limedition.jpg" alt="Издание Лимитид Эдишн" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -149,7 +184,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/lab.jpg" alt="Проект ЛАБ" />
+                                    <picture>
+                                        <source srcset="./images/desktop/lab2x-min.jpg, ./images/desktop/lab-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x8p-min.jpg, ./images/tablet/img8p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp8-min.jpg, ./images/mobile/imgp8-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/lab.jpg" alt="Проект ЛАБ" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -163,7 +203,12 @@
                         <li class="project-catalog__item">
                             <a href="">
                                 <div class="project-catalog__image">
-                                    <img src="./images/portfolio/growingbus.jpg" alt="Гроуин Бизнес" />
+                                    <picture>
+                                        <source srcset="./images/desktop/growing2x-min.jpg, ./images/desktop/growing-min.jpg" media="(min-width: 1200px)">
+                                        <source srcset="./images/tablet/img@2x9p-min.jpg, ./images/tablet/img9p-min.jpg" media="(min-width: 768px)">
+                                        <source srcset="./images/mobile/img@2xp9-min.jpg, ./images/mobile/imgp9-min.jpg" media="(min-width: 480px)">
+                                        <img src="./images/portfolio/growingbus.jpg" alt="Гроуин Бизнес" />
+                                    </picture>                                    
                                     <p class="project-catalog__discr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit ratione nihil, minima
                                     nobis optio assumenda sequi expedita magni aliquid, ad ex distinctio error ipsum odio ut consequuntur reprehenderit
                                     illo.</p>
@@ -176,10 +221,10 @@
                         </li>
                     </ul>
                 </div>               
-            </section>     -->
+            </section>     
         </main>
         <!--Футер-->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container container-footer">
                 <div class="footer-contacts">
                     <a class="logo" href=""><span class="logo__web">Web</span><span
@@ -244,6 +289,6 @@
                     </ul>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
 </html>
