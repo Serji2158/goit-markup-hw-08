@@ -1,19 +1,15 @@
 .subscription {
   width: 100%;
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     margin-top: 72px;
     margin-bottom: 94px;
     margin-left: 93px;
-
     &__form {
       display: flex;
       align-items: center;
@@ -25,6 +21,11 @@
   width: 100%;
   @media screen and (min-width: 480px) {
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   height: 50px;
   margin-left: auto;
@@ -63,7 +64,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-
   width: 100%;
   width: 200px;
   height: 50px;
@@ -73,18 +73,18 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   @extend %flex-center;
   // display: flex;
   // align-items: center;
   // text-align: center;
   letter-spacing: 0.06em;
-
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &__icon {
     margin-left: 10px;

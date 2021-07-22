@@ -6,6 +6,9 @@
   line-height: 1.17px;
   letter-spacing: 0.03em;
   font-family: $Prime-font;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &__web {
     // @extend %logo-font;
